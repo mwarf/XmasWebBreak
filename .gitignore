@@ -1,24 +1,41 @@
-# build output
-dist/
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# generated types
+# Build and output directories
+dist/
 .astro/
 
-# dependencies
-node_modules/
+# IDE-specific files (optional, uncomment if you use these IDEs)
+# .idea/
+# .vscode/
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# environment variables
+# Environment files (if you are using them, which you should)
 .env
-.env.production
+.env.*
+!.env.example
 
-# macOS-specific files
+# OS-generated files
 .DS_Store
+Thumbs.db
 
-# jetbrains setting folder
-.idea/
+# TypeScript-specific (if you are not using TypeScript, you can remove these)
+*.tsbuildinfo
+
+# Caching
+.turbo/
+.eslintcache
+
+# Shadcn specific
+components.json
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Astro
+.astro/
